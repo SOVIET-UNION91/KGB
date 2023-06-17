@@ -1,0 +1,102 @@
+<html>
+<head>
+</head>
+<body>
+    <link rel="shortcut icon" type="image/x-icon" href="knight.ico"/>
+<br>
+<style>
+
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: black;
+}
+ form {
+        border: 3px solid black;
+    }
+ input[type=text], input[type=password] {
+        background-color: black;
+        color: white;
+        width: 80%;
+        height: 5%;
+        margin: 5px 0;
+        padding: 15px 10px;
+        display: inline-block;
+        border: 2px solid white;
+        box-sizing: border-box;
+    }
+ button:hover {
+        opacity: 0.7;
+        color:white;
+    }
+  .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+          color:white;
+    }
+
+
+ .container {
+        padding: 25;
+          color:white;
+
+    }
+    #login-button {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  padding: 7px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: white;
+  color: white;
+}
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh; //this property effects the height of the line
+  overflow: hidden;
+    line-height: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.loading {
+  position: relative;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, #3498db, #e74c3c, #f1c40f, #2ecc71);
+  background-size: 400% 100%;
+  animation: gradient 5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+}
+</style>
+<body style="background-color:black;">ter">
+		<center><div style="width:618px;height:450px;border:1px solid white;"> <div class="container">
+  <label><h1 style="font-size: 48px;"> 403</h1></label>
+
+<div class="loading-container">
+  <div class="loading"></div>
+</div>
+      <label><h4>(Forbidden) You do not have the autority to access this resource.</h4></label><br><br>
+
+
+  <a href="HOME0.html" class="button" id="login-button">Back to Home</a>
