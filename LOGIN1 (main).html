@@ -1,0 +1,94 @@
+<html>
+<head>
+</head>
+<body>
+    <link rel="shortcut icon" type="image/x-icon" href="knight.ico"/>
+<br>
+<style>
+
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: black;
+}
+ form {
+        border: 3px solid black;
+    }
+ input[type=text], input[type=password] {
+        background-color: black;
+        color: white;
+        width: 80%;
+        height: 5%;
+        margin: 5px 0;
+        padding: 15px 10px;
+        display: inline-block;
+        border: 2px solid white;
+        box-sizing: border-box;
+    }
+ button:hover {
+        opacity: 0.7;
+        color:white;
+    }
+  .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+          color:white;
+    }
+
+
+ .container {
+        padding: 25;
+          color:white;
+
+    }
+    #login-button {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  padding: 7px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: white;
+  color: white;
+}
+    </style>
+
+    <body style="background-color:black;">
+    <center><div style="width:618px;height:450px;border:1px solid white;"><img src="login1.jpg">  <div class="container">
+      <label><h4> Username :-</style></h4></label>
+      <input type="text" placeholder="Enter Your Username."id="username" name="username" required>
+          <label><h4>Password :- </h4></label>
+          <input type="password" placeholder="Enter Your Password." id="password" name="password" required>
+          <br><br>
+         <button id="login-button">Authenticate</button>
+          <script>
+          // Define the correct username and password
+const correctUsername = 'user';
+const correctPassword = 'password';
+
+// Get the input fields and button from the HTML document
+const usernameInput = document.getElementById('username');
+const passwordInput = document.getElementById('password');
+const loginButton = document.getElementById('login-button');
+
+// Add a click event listener to the login button
+loginButton.addEventListener('click', function() {
+  // Get the values of the username and password input fields
+  const username = usernameInput.value;
+  const password = passwordInput.value;
+
+  // Check if the username and password are correct
+  while (username !== correctUsername || password !== correctPassword) {
+    alert('Incorrect username or password. Please try again.');
+    return;
+  }
+
+  // If the username and password are correct, redirect the user to the HTML page
+  window.location.href = 'HOME1.html';
+});
+</script>
+        <br>

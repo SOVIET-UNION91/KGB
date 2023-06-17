@@ -1,0 +1,132 @@
+<html>
+<head>
+</head>
+<body>
+<br>
+<script>
+var username = "fronde"
+var response;
+var entryCount = 0;
+var entryLimit = 1;
+var error = false;
+
+while(response != username && !error){
+     if(entryCount < entryLimit){
+          response =window.prompt("Enter Username");
+          entryCount++;
+     } else {
+          error = true;
+     }
+}
+var password = "wordpass";
+var response;
+var entryCount = 0;
+var entryLimit = 1000;
+var error = false;
+
+while(response != password && !error){
+     if(entryCount < entryLimit){
+          response =window.prompt("Enter Password");
+          entryCount++;
+     } else {
+          error = true;
+}
+if(error){
+    
+     var username = "fronde"
+     var response;
+     var entryCount = 0;
+     var entryLimit = 1;
+     var error = false;
+
+     while(response != username && !error){
+          if(entryCount < entryLimit){
+               response =window.prompt("Enter Username");
+               entryCount++;
+          } else {
+               error = true;
+          }
+     }
+     var password = "wordpass";
+     var response;
+     var entryCount = 0;
+     var entryLimit = 1000;
+     var error = false;
+
+     while(response != password && !error){
+          if(entryCount < entryLimit){
+               response =window.prompt("Enter Password");
+               entryCount++;
+          } else {
+               error = true;
+
+     }
+   }
+
+ }
+ else {
+     alert("Successfully authenticated");
+
+}
+
+</script>
+<style>
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: black;
+}
+ form {
+        border: 3px solid black;
+    }
+ input[type=text], input[type=password] {
+        background-color: black;
+        color: white;
+        width: 80%;
+        height: 5%;
+        margin: 5px 0;
+        padding: 15px 10px;
+        display: inline-block;
+        border: 2px solid white;
+        box-sizing: border-box;
+    }
+ button:hover {
+        opacity: 0.7;
+        color:white;
+    }
+  .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+          color:white;
+    }
+
+
+ .container {
+        padding: 25;
+          color:white;
+
+    }
+    .btn {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  padding: 7px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: white;
+  color: white;
+}
+    </style>
+<body style="background-color:black;">
+<center><div style="width:618px;height:450px;border:1px solid white;"><img src="login1.jpg">  <div class="container">
+  <label><h4> Username :-</style></h4></label>
+  <input type="text" placeholder="Enter Your Username."id="username" name="username" required>
+      <label><h4>Password :- </h4></label>
+      <input type="password" placeholder="Enter Your Password." id="password" name="password" required>
+      <form method="POST" action=HOME1.html>
+        <br>
+    <button class="btn success">Authenticate</button>
